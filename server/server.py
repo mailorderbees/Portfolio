@@ -1,7 +1,8 @@
 from datetime import datetime
 from flask import Flask, render_template, redirect, url_for
+import random
 
-app = Flask(__name__, static_folder="../static/dist", template_folder="../static")
+app = Flask(__name__, static_folder="../static", template_folder="../templates")
 
 @app.errorhandler(404)
 def not_found(error):
@@ -17,7 +18,8 @@ def root():
 
 @app.route("/index")
 def index():
-    return render_template("index.html")
+    wallpaper = random.choice(['test1.jpg','test2.jpg','test3.jpg'])
+    return render_template("index.html", background=wallpaper)
 
 if __name__ == "__main__":
     app.run()
