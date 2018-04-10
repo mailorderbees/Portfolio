@@ -18,8 +18,19 @@ def root():
 
 @app.route("/index")
 def index():
-    wallpaper = random.choice(['test1.jpg','test2.jpg','test3.jpg'])
-    return render_template("index.html", background=wallpaper)
+    return render_template("index.html")
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+@app.route("/projects")
+def contact():
+    return "contact me placeholder"
+
+@app.route("/derby")
+def derby():
+    return "placeholder for derby info page, a hobby"
 
 if __name__ == "__main__":
     app.run()

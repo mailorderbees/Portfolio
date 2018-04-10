@@ -2,16 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!--css crap or whatever, fuck idk-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="../static/mainPage.css">
     <title>Emma Bareis</title>
+    <style>
+    body{
+      background-color: rgba(181, 247, 247, 0.64)
+    }
+    </style>
+
   </head>
-  <body style=background-image:url('../static/images/{{background}}')>
-    <div id="content">
-      <div class = "MainBody"><h1 class = "Title">Emma Bareis</h1>
-      <h2 class = "Title">Software Engineer</h2></div>
-      <div class = "MainBody">Hello!  My name is Emma Bareis and I am a software developer from Dallas, Tx with experience developing for the market research and health insurance industries.  I have been involved in development professionally since 2014 and have been experimenting and tinkering on my own time for longer.  My most recent experience lies with C#, Azure, react, and knockout.  In my own time I enjoy experimenting with Python and C, and have even delved into a specific implementation of Z80 assembly for the Nintendo game boy.  When not working, my hobbies include collecting and playing retro video games, playing roller derby, and experimenting with game boy software development.</div>
+
+  <body>
+    <div class = "HeaderBar">
+      <div>
+        <div class="Name">
+          <a href=/>Emma Bareis</a>
+        </div>
+        <div class="Navigation">
+          <a href=/about>About</a> | <a href=/Projects>Stuff I've Done</a> | <a href=/derby>Roller Derby!</a>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class = "MainBody"> Hello, I'm Emma Bareis, and welcome to my site.  Below you'll find links to my github and linkedin, as well as an email link.
+        In the navigation bar there are links to learn more about me, some of my projects, and a non-programming passion of mine, roller derby.</div>
+      <div class = "MainIcons">
+        <div><a href="https://github.com/mailorderbees"><i class="fa fa-github fa-5x"></i></a>  My Github </div>
+        <div><a href="https://www.linkedin.com/in/emma-bareis-42472a49/"><i class="fa fa-linkedin-square fa-5x"></i></a> My Linkedin </div>
+        <div><a href="mailto: b4bareis@gmail.com"><i class="fa fa-envelope fa-5x"></i></a> b4bareis@gmail.com</div>
+      </div>
+
     </div>
   </body>
 </html>
