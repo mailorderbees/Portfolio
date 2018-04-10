@@ -1,8 +1,13 @@
 from datetime import datetime
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for, send_from_directory
 import random
 
 app = Flask(__name__, static_folder="../static", template_folder="../templates")
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path,'static'),
+    'favicon.ico',mimetype='image/vnd.microsoft.icon')
 
 @app.errorhandler(404)
 def not_found(error):
@@ -25,12 +30,12 @@ def about():
     return render_template("about.html")
 
 @app.route("/projects")
-def contact():
-    return "contact me placeholder"
+def projects():
+    return render_template("projects.html", doc_id="Resume.pdf")
 
 @app.route("/derby")
 def derby():
-    return "placeholder for derby info page, a hobby"
+    return render_template("derby.html")
 
 if __name__ == "__main__":
     app.run()

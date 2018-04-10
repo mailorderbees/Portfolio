@@ -4,25 +4,43 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <link rel="stylesheet" href="../static/mainPage.css">
     <title>Emma Bareis</title>
+    <style>
+    body{
+      background-color: rgba(181, 247, 247, 0.64)
+    }
+    </style>
   </head>
 
-  <body  class = "mainContainer">
+
+  <body>
     <div class = "HeaderBar">
       <div>
         <div class="Name">
           <a href=/>Emma Bareis</a>
         </div>
         <div class="Navigation">
-          <a href=/about>About</a> | <a href=/Projects>Stuff I've Done</a> | <a href=/derby>Roller Derby!</a>
+          <a href=/>Home</a> | <a href=/about>About</a> | <a href=/projects>Stuff I've Done</a> | <a href=/derby>Roller Derby!</a>
         </div>
       </div>
     </div>
-    <div>
+    <div id="content">
       <div><h1 class = "Title">Emma Bareis</h1>
-      <h2 class = "Title">Software Engineer</h2></div>
-      <div class = "MainBody">Hello!  My name is Emma Bareis and I am a software developer from Dallas, Tx with experience developing for the market research and health insurance industries.  I have been involved in development professionally since 2014 and have been experimenting and tinkering on my own time for longer.  My most recent experience lies with C#, Azure, react, and knockout.  In my own time I enjoy experimenting with Python and C, and have even delved into a specific implementation of Z80 assembly for the Nintendo game boy.  When not working, my hobbies include collecting and playing retro video games, playing roller derby, and experimenting with game boy software development.</div>
+      <h2 class = "Title">Software Engineer</h2>
+    </div>
+      <div class = "AboutBody"><p>Hello!  I am a software developer from Dallas, Tx with experience developing for the market research and health insurance industries.  I have been involved in development professionally since 2014 and have been experimenting and tinkering on my own time for longer.</p>
+          <p> I have experience with:
+          <ul>
+            <li> C#
+            <li> React
+            <li> Knockout
+            <li> Python (I made this site with Flask)
+            <li> HTML and CSS
+            <li> Azure
+          </ul></p>
+          <p>In my own time I enjoy experimenting with Python and C, and have even delved into a specific implementation of Z80 assembly for the Nintendo game boy.  When not working, my hobbies include collecting and playing retro video games, playing roller derby, and experimenting with game boy software development.</div></p>
     </div>
   </body>
 </html>

@@ -7,9 +7,22 @@
   padding: 100px;
 }
 
-.MainIcons{
-  text-align: center;
+.AboutBody{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  padding: 20px;
+}
 
+.MainIcons{
+  display: inline-block;
+  text-align: left;
+}
+
+.IconHolder{
+  text-align:center;
 }
 
 .HeaderBar{
@@ -37,7 +50,7 @@
 }
 
 h1.Title{
-  margin-top: 15%;
+  margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   width: 50%;

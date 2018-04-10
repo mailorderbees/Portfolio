@@ -1,3 +1,34 @@
-<body>
-  <div>Looks like you got lost.  Oopsie</div>
-  <div><a href=/>Let's go back to somewhere familiar.</a>
+<!--index.html-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="../static/mainPage.css">
+    <title>Emma Bareis</title>
+    <style>
+    body{
+      background-color: rgba(181, 247, 247, 0.64)
+    }
+    </style>
+  </head>
+
+
+  <body>
+    <div class = "HeaderBar">
+      <div>
+        <div class="Name">
+          <a href=/>Emma Bareis</a>
+        </div>
+        <div class="Navigation">
+          <a href=/>Home</a> | <a href=/about>About</a> | <a href=/projects>Stuff I've Done</a> | <a href=/derby>Roller Derby!</a>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <div><h1 class = "Title"><div>Looks like you got lost.  Oopsie</div></h1>
+      <div><h1 class = "Title"><a href=/>Let's go back to somewhere familiar.</a></h1>
+      </div>
+  </body>
+</html>
